@@ -27,7 +27,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           external_repository: imjoshholloway/imjoshholloway.github.io
-          deploy_token: ${{ secrets.DEPLOY_TOKEN }}
+          deploy_key: ${{ secrets.DEPLOY_TOKEN }}
           publish_branch: master
           publish_dir: ./public
           cname: imjoshholloway.uk
