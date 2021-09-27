@@ -1,7 +1,7 @@
 baseURL = "https://imjoshholloway.uk/"
 languageCode = "en-gb"
-title = "The Ramblings of Josh"
-theme = "cactus"
+title = "Josh Holloway"
+theme = "hello-friend-ng"
 googleAnalytics = "UA-167963804-1"
 
 [menu]
@@ -11,19 +11,26 @@ googleAnalytics = "UA-167963804-1"
     url = "/resume.pdf"
     weight = -110
 
+  [[menu.main]]
+    name = "Posts"
+    identifier = "posts"
+    url = "posts/"
+
 [params]
-	name = "Josh Holloway"
-	description = "Ramblings of a madman"
-	bio = "Father | Husband | Software Engineer"
-	twitter = "imjoshholloway"
+  homeSubtitle = "Father // Husband // Software Engineer"
 
-	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
-	iconFont = "mono-social"
-  # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-  socialIconStyle = "circle"
+  [params.portrait]
+    path     = "/images/profile.jpg"
+    alt      = "Portrait"
+    maxWidth = "150px"
 
-# Add additional social link entries underneath
-[social]
-    twitter  = "https://www.twitter.com/imjoshholloway"
-    github   = "https://www.github.com/imjoshholloway"
-    linkedin = "https://uk.linkedin.com/in/imjoshholloway"
+  # Add additional social link entries underneath
+  [[params.social]]
+    name = "twitter"
+    url  = "https://www.twitter.com/imjoshholloway"
+  [[params.social]]
+    name = "github"
+    url  = "https://www.github.com/imjoshholloway"
+  [[params.social]]
+    name = "linkedin"
+    url = "https://uk.linkedin.com/in/imjoshholloway"
